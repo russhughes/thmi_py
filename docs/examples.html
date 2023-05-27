@@ -20,7 +20,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Fonts" href="fonts.html" />
-    <link rel="prev" title="thmi Reference" href="thmi.html" /> 
+    <link rel="prev" title="THMI Reference" href="thmi.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -44,8 +44,33 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="index.html">WT32SC01 Plus Driver</a></li>
-<li class="toctree-l1"><a class="reference internal" href="thmi.html">thmi Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">T-HMI Driver</a></li>
+<li class="toctree-l1"><a class="reference internal" href="thmi.html">THMI Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="thmi.html#thmi.color565"><code class="docutils literal notranslate"><span class="pre">color565()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="thmi.html#thmi.THMI"><code class="docutils literal notranslate"><span class="pre">THMI</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="thmi.html#thmi.THMI.soft_reset"><code class="docutils literal notranslate"><span class="pre">THMI.soft_reset()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="thmi.html#thmi.THMI.sleep_mode"><code class="docutils literal notranslate"><span class="pre">THMI.sleep_mode()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="thmi.html#thmi.THMI.inversion_mode"><code class="docutils literal notranslate"><span class="pre">THMI.inversion_mode()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="thmi.html#thmi.THMI.rotation"><code class="docutils literal notranslate"><span class="pre">THMI.rotation()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="thmi.html#thmi.THMI.vline"><code class="docutils literal notranslate"><span class="pre">THMI.vline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="thmi.html#thmi.THMI.hline"><code class="docutils literal notranslate"><span class="pre">THMI.hline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="thmi.html#thmi.THMI.pixel"><code class="docutils literal notranslate"><span class="pre">THMI.pixel()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="thmi.html#thmi.THMI.blit_buffer"><code class="docutils literal notranslate"><span class="pre">THMI.blit_buffer()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="thmi.html#thmi.THMI.rect"><code class="docutils literal notranslate"><span class="pre">THMI.rect()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="thmi.html#thmi.THMI.fill_rect"><code class="docutils literal notranslate"><span class="pre">THMI.fill_rect()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="thmi.html#thmi.THMI.fill"><code class="docutils literal notranslate"><span class="pre">THMI.fill()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="thmi.html#thmi.THMI.clear"><code class="docutils literal notranslate"><span class="pre">THMI.clear()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="thmi.html#thmi.THMI.line"><code class="docutils literal notranslate"><span class="pre">THMI.line()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="thmi.html#thmi.THMI.vscrdef"><code class="docutils literal notranslate"><span class="pre">THMI.vscrdef()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="thmi.html#thmi.THMI.vscsad"><code class="docutils literal notranslate"><span class="pre">THMI.vscsad()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="thmi.html#thmi.THMI.text"><code class="docutils literal notranslate"><span class="pre">THMI.text()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="thmi.html#thmi.THMI.bitmap"><code class="docutils literal notranslate"><span class="pre">THMI.bitmap()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="thmi.html#thmi.THMI.write"><code class="docutils literal notranslate"><span class="pre">THMI.write()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="thmi.html#thmi.THMI.write_width"><code class="docutils literal notranslate"><span class="pre">THMI.write_width()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Example Programs</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#chango-py">chango.py</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#feathers-py">feathers.py</a></li>
@@ -111,9 +136,9 @@ See the font2bitmap program in the utils directory.</p>
 <span class="linenos"> 8</span><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">freq</span>
 <span class="linenos"> 9</span><span class="kn">import</span> <span class="nn">thmi</span>
 <span class="linenos">10</span><span class="kn">import</span> <span class="nn">gc</span>
-<span class="linenos">11</span><span class="kn">from</span> <span class="nn">truetype</span> <span class="kn">import</span> <span class="n">chango_16</span> <span class="k">as</span> <span class="n">font_16</span>
-<span class="linenos">12</span><span class="kn">from</span> <span class="nn">truetype</span> <span class="kn">import</span> <span class="n">chango_32</span> <span class="k">as</span> <span class="n">font_32</span>
-<span class="linenos">13</span><span class="kn">from</span> <span class="nn">truetype</span> <span class="kn">import</span> <span class="n">chango_64</span> <span class="k">as</span> <span class="n">font_64</span>
+<span class="linenos">11</span><span class="kn">import</span> <span class="nn">chango_16</span> <span class="k">as</span> <span class="nn">font_16</span>
+<span class="linenos">12</span><span class="kn">import</span> <span class="nn">chango_32</span> <span class="k">as</span> <span class="nn">font_32</span>
+<span class="linenos">13</span><span class="kn">import</span> <span class="nn">chango_64</span> <span class="k">as</span> <span class="nn">font_64</span>
 <span class="linenos">14</span>
 <span class="linenos">15</span><span class="n">gc</span><span class="o">.</span><span class="n">collect</span><span class="p">()</span>
 <span class="linenos">16</span>
@@ -341,41 +366,35 @@ See the font2bitmap program in the utils directory.</p>
 <span class="linenos">28</span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
 <span class="linenos">29</span>    <span class="n">tft</span> <span class="o">=</span> <span class="n">thmi</span><span class="o">.</span><span class="n">THMI</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="linenos">30</span>
-<span class="linenos">31</span>    <span class="n">tft</span><span class="o">.</span><span class="n">clear</span><span class="p">(</span><span class="n">thmi</span><span class="o">.</span><span class="n">BLACK</span><span class="p">)</span>
-<span class="linenos">32</span>    <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="p">[</span><span class="n">thmi</span><span class="o">.</span><span class="n">RED</span><span class="p">,</span> <span class="n">thmi</span><span class="o">.</span><span class="n">GREEN</span><span class="p">,</span> <span class="n">thmi</span><span class="o">.</span><span class="n">BLUE</span><span class="p">]:</span>
-<span class="linenos">33</span>        <span class="n">tft</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
-<span class="linenos">34</span>        <span class="n">tft</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">font</span><span class="p">,</span> <span class="s2">&quot;Hello!&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">thmi</span><span class="o">.</span><span class="n">WHITE</span><span class="p">,</span> <span class="n">color</span><span class="p">)</span>
-<span class="linenos">35</span>        <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<span class="linenos">36</span>
-<span class="linenos">37</span>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-<span class="linenos">38</span>        <span class="k">for</span> <span class="n">rotation</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
-<span class="linenos">39</span>            <span class="n">tft</span><span class="o">.</span><span class="n">rotation</span><span class="p">(</span><span class="n">rotation</span><span class="p">)</span>
-<span class="linenos">40</span>            <span class="c1"># tft.clear(random.getrandbits(8))</span>
-<span class="linenos">41</span>
-<span class="linenos">42</span>            <span class="n">col_max</span> <span class="o">=</span> <span class="n">tft</span><span class="o">.</span><span class="n">width</span> <span class="o">-</span> <span class="n">font</span><span class="o">.</span><span class="n">WIDTH</span> <span class="o">*</span> <span class="mi">6</span>
-<span class="linenos">43</span>            <span class="n">row_max</span> <span class="o">=</span> <span class="n">tft</span><span class="o">.</span><span class="n">height</span> <span class="o">-</span> <span class="n">font</span><span class="o">.</span><span class="n">HEIGHT</span>
-<span class="linenos">44</span>
-<span class="linenos">45</span>            <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">50</span><span class="p">):</span>
-<span class="linenos">46</span>                <span class="n">tft</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
-<span class="linenos">47</span>                    <span class="n">font</span><span class="p">,</span>
-<span class="linenos">48</span>                    <span class="s2">&quot;Hello!&quot;</span><span class="p">,</span>
-<span class="linenos">49</span>                    <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">col_max</span><span class="p">),</span>
-<span class="linenos">50</span>                    <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">row_max</span><span class="p">),</span>
-<span class="linenos">51</span>                    <span class="n">thmi</span><span class="o">.</span><span class="n">color565</span><span class="p">(</span>
+<span class="linenos">31</span>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="linenos">32</span>        <span class="k">for</span> <span class="n">rotation</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+<span class="linenos">33</span>            <span class="n">tft</span><span class="o">.</span><span class="n">rotation</span><span class="p">(</span><span class="n">rotation</span><span class="p">)</span>
+<span class="linenos">34</span>            <span class="n">tft</span><span class="o">.</span><span class="n">clear</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">getrandbits</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span>
+<span class="linenos">35</span>
+<span class="linenos">36</span>            <span class="n">col_max</span> <span class="o">=</span> <span class="n">tft</span><span class="o">.</span><span class="n">width</span> <span class="o">-</span> <span class="n">font</span><span class="o">.</span><span class="n">WIDTH</span> <span class="o">*</span> <span class="mi">6</span>
+<span class="linenos">37</span>            <span class="n">row_max</span> <span class="o">=</span> <span class="n">tft</span><span class="o">.</span><span class="n">height</span> <span class="o">-</span> <span class="n">font</span><span class="o">.</span><span class="n">HEIGHT</span>
+<span class="linenos">38</span>
+<span class="linenos">39</span>            <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">50</span><span class="p">):</span>
+<span class="linenos">40</span>                <span class="n">tft</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
+<span class="linenos">41</span>                    <span class="n">font</span><span class="p">,</span>
+<span class="linenos">42</span>                    <span class="s2">&quot;Hello!&quot;</span><span class="p">,</span>
+<span class="linenos">43</span>                    <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">col_max</span><span class="p">),</span>
+<span class="linenos">44</span>                    <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">row_max</span><span class="p">),</span>
+<span class="linenos">45</span>                    <span class="n">thmi</span><span class="o">.</span><span class="n">color565</span><span class="p">(</span>
+<span class="linenos">46</span>                        <span class="n">random</span><span class="o">.</span><span class="n">getrandbits</span><span class="p">(</span><span class="mi">8</span><span class="p">),</span>
+<span class="linenos">47</span>                        <span class="n">random</span><span class="o">.</span><span class="n">getrandbits</span><span class="p">(</span><span class="mi">8</span><span class="p">),</span>
+<span class="linenos">48</span>                        <span class="n">random</span><span class="o">.</span><span class="n">getrandbits</span><span class="p">(</span><span class="mi">8</span><span class="p">),</span>
+<span class="linenos">49</span>                    <span class="p">),</span>
+<span class="linenos">50</span>                    <span class="n">thmi</span><span class="o">.</span><span class="n">color565</span><span class="p">(</span>
+<span class="linenos">51</span>                        <span class="n">random</span><span class="o">.</span><span class="n">getrandbits</span><span class="p">(</span><span class="mi">8</span><span class="p">),</span>
 <span class="linenos">52</span>                        <span class="n">random</span><span class="o">.</span><span class="n">getrandbits</span><span class="p">(</span><span class="mi">8</span><span class="p">),</span>
 <span class="linenos">53</span>                        <span class="n">random</span><span class="o">.</span><span class="n">getrandbits</span><span class="p">(</span><span class="mi">8</span><span class="p">),</span>
-<span class="linenos">54</span>                        <span class="n">random</span><span class="o">.</span><span class="n">getrandbits</span><span class="p">(</span><span class="mi">8</span><span class="p">),</span>
-<span class="linenos">55</span>                    <span class="p">),</span>
-<span class="linenos">56</span>                    <span class="n">thmi</span><span class="o">.</span><span class="n">color565</span><span class="p">(</span>
-<span class="linenos">57</span>                        <span class="n">random</span><span class="o">.</span><span class="n">getrandbits</span><span class="p">(</span><span class="mi">8</span><span class="p">),</span>
-<span class="linenos">58</span>                        <span class="n">random</span><span class="o">.</span><span class="n">getrandbits</span><span class="p">(</span><span class="mi">8</span><span class="p">),</span>
-<span class="linenos">59</span>                        <span class="n">random</span><span class="o">.</span><span class="n">getrandbits</span><span class="p">(</span><span class="mi">8</span><span class="p">),</span>
-<span class="linenos">60</span>                    <span class="p">),</span>
-<span class="linenos">61</span>                <span class="p">)</span>
-<span class="linenos">62</span>
-<span class="linenos">63</span>
-<span class="linenos">64</span><span class="n">freq</span><span class="p">(</span><span class="mi">240_000_000</span><span class="p">)</span>
-<span class="linenos">65</span><span class="n">main</span><span class="p">()</span>
+<span class="linenos">54</span>                    <span class="p">),</span>
+<span class="linenos">55</span>                <span class="p">)</span>
+<span class="linenos">56</span>
+<span class="linenos">57</span>
+<span class="linenos">58</span><span class="n">freq</span><span class="p">(</span><span class="mi">240_000_000</span><span class="p">)</span>
+<span class="linenos">59</span><span class="n">main</span><span class="p">()</span>
 </pre></div>
 </div>
 </section>
@@ -441,9 +460,9 @@ See the font2bitmap program in the utils directory.</p>
 <span class="linenos"> 6</span>
 <span class="linenos"> 7</span><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">freq</span>
 <span class="linenos"> 8</span><span class="kn">import</span> <span class="nn">thmi</span>
-<span class="linenos"> 9</span><span class="kn">from</span> <span class="nn">truetype</span> <span class="kn">import</span> <span class="n">NotoSans_32</span> <span class="k">as</span> <span class="n">noto_sans</span>
-<span class="linenos">10</span><span class="kn">from</span> <span class="nn">truetype</span> <span class="kn">import</span> <span class="n">NotoSerif_32</span> <span class="k">as</span> <span class="n">noto_serif</span>
-<span class="linenos">11</span><span class="kn">from</span> <span class="nn">truetype</span> <span class="kn">import</span> <span class="n">NotoSansMono_32</span> <span class="k">as</span> <span class="n">noto_mono</span>
+<span class="linenos"> 9</span><span class="kn">import</span> <span class="nn">NotoSans_32</span> <span class="k">as</span> <span class="nn">noto_sans</span>
+<span class="linenos">10</span><span class="kn">import</span> <span class="nn">NotoSerif_32</span> <span class="k">as</span> <span class="nn">noto_serif</span>
+<span class="linenos">11</span><span class="kn">import</span> <span class="nn">NotoSansMono_32</span> <span class="k">as</span> <span class="nn">noto_mono</span>
 <span class="linenos">12</span>
 <span class="linenos">13</span>
 <span class="linenos">14</span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
@@ -717,7 +736,7 @@ toasters.bmp image.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="thmi.html" class="btn btn-neutral float-left" title="thmi Reference" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="thmi.html" class="btn btn-neutral float-left" title="THMI Reference" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="fonts.html" class="btn btn-neutral float-right" title="Fonts" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
