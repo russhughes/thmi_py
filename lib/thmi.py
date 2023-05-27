@@ -516,7 +516,7 @@ class THMI:
         """
         self.fill_rect(0, 0, self.width, self.height, color)
 
-    # @micropython.native
+    @micropython.native
     def clear(self, color=None):
         """
         Very fast clear screen.
